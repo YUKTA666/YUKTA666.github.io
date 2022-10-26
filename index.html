@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage | Home</title>
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
     
 </head>
 <body>
@@ -29,28 +31,28 @@
             <h3>These notes are particularly curated by me for my future reference. So it may or may not be helpful for others. But I'll be delighted to know if these notes are of any help to anyone. 
             <h3 class = "developer">Happy Revision</h3>
             </h3>
-            <img src="img.png" alt="" width="50%" height="60%">
+            <img src="img.png" alt="">
         </section>
         <section>
             <h2> JAVA</h2>
             <h3> All about language basics, Data Structures and Algorithms.</h3>
-            <div class="container">
-                <iframe class="items" src="https://www.youtube.com/embed/bSrm9RXwBaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Recursion</iframe>
-                <iframe class="items" src="https://www.youtube.com/embed/oAja8-Ulz6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Linked-Lists</iframe>
-                <iframe class="items" src="https://www.youtube.com/embed/7m1DMYAbdiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Stack</iframe>
-                <iframe class="items" src="https://www.youtube.com/embed/va_6RmSrKCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Queue</iframe>
-                <iframe class="items" src="https://www.youtube.com/embed/-DzowlcaUmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Binary Tree</iframe>
-                <iframe class="items" src="https://www.youtube.com/embed/eJiGN1h8XzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>HashSet</iframe>
+            <div class="carousel" data-flickity='{"wrapAround": true}'>
+                <div class="carousel-cell iframe-container" ><iframe class="items" src="https://www.youtube.com/embed/bSrm9RXwBaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Recursion</iframe></div>
+                <div class="carousel-cell iframe-container"><iframe class="items" src="https://www.youtube.com/embed/oAja8-Ulz6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Linked-Lists</iframe></div>
+                <div class="carousel-cell iframe-container"><iframe class="items" src="https://www.youtube.com/embed/7m1DMYAbdiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Stack</iframe></div>
+                <div class="carousel-cell iframe-container"><iframe class="items" src="https://www.youtube.com/embed/va_6RmSrKCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Queue</iframe></div>
+                <div class="carousel-cell iframe-container"><iframe class="items" src="https://www.youtube.com/embed/-DzowlcaUmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Binary Tree</iframe></div>
+                <div class="carousel-cell iframe-container"><iframe class="items" src="https://www.youtube.com/embed/eJiGN1h8XzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>HashSet</iframe></div>
             </div>
         </section>
         <section class="reason">
-            <img id="box" src="yukta.jpeg" alt="" width="25%">
+            <img id="box" src="yukta.jpeg" alt="">
             <h2 class="warning">About Me</h2>
             <h3 class="text3">Hello! I'm Yukta a recent graduate from SGGSIE&T, Nanded. I majored in Mechanical Engineering but am rather interested in and good at coding. I studied programming in college and from Youtube. I also completed various courses on learning platforms like Coursera, EDX and Internshala with outstanding grades. But few years later when I restarted programming to no avail I wasn't able to code as good as I did before and also I forgot lot of programming concepts. So I decided to create this webpage for the sole purpose of saving all the impotant concepts for a quick revision. And I hope I won't be needing this in fututre but if I do then my go to notes will be one click away for me to be coding ready!  </h3>
             <br>
-            <h3 class="follow"> <a href="https://github.com/YUKTA666">GitHub</a> |
-             <a href="https://www.linkedin.com/in/yukta-behare/">LinkedIn</a> |
-             <a href="https://yuktabehare.wixsite.com/lostsoulodessey/">Website</a></h3>
+            <h3 class="follow"> <a class="github" href="https://github.com/YUKTA666">GitHub</a> |
+             <a class="linkedin" href="https://www.linkedin.com/in/yukta-behare/">LinkedIn</a> |
+             <a class="website" href="https://yuktabehare.wixsite.com/lostsoulodessey/">Website</a></h3>
         </section>
         <section class="refer">
             <h2 class="be">My go-to coding practice platform</h2>
@@ -69,6 +71,7 @@
 
         </nav>  
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
 </html>
